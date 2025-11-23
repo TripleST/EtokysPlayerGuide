@@ -1,0 +1,49 @@
+﻿body
+{
+    background-color: slategrey;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+
+.expandable .content 
+{
+    display: none;
+}
+
+/* .expandable input
+{
+    display: none;
+} */
+
+.expandable input:checked ~ .content
+{
+    display: block;
+}
+
+ .collapsible { 
+    display:block; 
+    cursor:pointer; 
+    user-select:none; 
+}
+
+.collapsible input { 
+    display:none; 
+}
+
+.collapsible .title { 
+    display:block; 
+    padding:6px; 
+    background:#384563; 
+    text-align: center;
+}
+
+.collapsible .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.collapsible input:checked + .title + .content {
+  max-height: 2000px; 
+}
