@@ -2,10 +2,17 @@
 {
     background-color: slategrey;
     margin: 0;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
 }
 
+/* header
+{
+    margin: 0;
+    padding: 0px;
+    width: 100vw;
+    background-color: #33cdcd;
+} */
 
 .expandable .content 
 {
@@ -25,6 +32,8 @@
     box-shadow: 2px 2px 10px;
     border-radius: 15px;
     padding: 0px 4px 8px 8px;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .expandable:hover {
@@ -56,21 +65,107 @@
     background-color:#284242;
 }
 
-/*.header {*/
-    /*background-color: #33cdcd;*/
-    /*outline-style: solid;
-    outline-color: darkslategrey;
-    box-shadow: 0px 2px 10px;
+.header {
+    /* background-color: #33cdcd; */
+    outline-style: outset;
+    outline-color: slategrey;
+    box-shadow: 0px 4px 4px;
     width: 100%;
-}*/
+    height: 100%;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer {
+    /* background-color: #33cdcd; */
+    /* outline-style: outset;
+    outline-color: slategrey; */
+    box-shadow: 0px -4px 3px rgb(39, 48, 54);
+    width: 100%;
+    height: 100%;
+    font-style: italic;
+    text-align: center;
+}
 
 .opening {
-    background-color: #597593;
+    display: flex;
+    background-color: #6989a3;
     outline-style: solid;
     outline-color: darkslategrey;
     box-shadow: 0px 2px 10px;
     border-radius: 5px;
-    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contentlibrary {
+    background-color:#6989a3;
+    outline-style: solid;
+    outline-color: darkslategrey;
+    box-shadow: 0px 2px 10px;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.navigation {
+    background-color: #384563;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px;    
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px;
+    width: fit-content;
+    /* margin: 0 auto; */
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 3, 38);
+}
+
+.navigation:hover {
+    background-color:#2f384f
+}
+
+.navPane {
+    display: inline-flex;
+    background-color: slategrey;
+    border-radius: 15px;
+    float: inline-start;
+    padding: 10px;
+    width: 30%;
+    border-color: darkslategrey;
+    border-style: solid;
+}
+
+.navTable  {
+    width:100%;
+}
+
+.navTable th {
+    font-size: 1.25em;
+}
+
+.navTable td {
+    padding: 3px;
+    border-radius: 15px;
+    background-color: #384563;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+
+.navTable td:hover {
+    background-color:#2f384f
 }
 
 .collapsible {
@@ -81,6 +176,8 @@
     background: #384563;
     border-radius: 15px;
     box-shadow: 2px 2px 10px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .collapsible:hover {
