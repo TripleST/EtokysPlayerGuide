@@ -238,3 +238,16 @@
     width: 100%;
     text-align: left;
 }
+
+.stories {
+    padding-bottom: 20px;
+}
+
+.storyLink {
+    color: #33cdcd;
+}
+
+.storyLink:visited {
+    color: #1e7d7d;
+}
+
