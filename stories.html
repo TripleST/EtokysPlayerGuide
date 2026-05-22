@@ -25,104 +25,81 @@
                     <th>Navigation Pane</th>
                 </tr>
                 <tr>
-                    <td><a href="">Standalone Works</a></td>
+                    <td><button class="sectionBtn" data-section="standalones"
+                            data-title="Section Viewer: Standalone Works">Standalone Works</button></td>
                 </tr>
                 <tr>
-                    <td><a href="">Spelljammer (D&D)</a></td>
+                    <td><button class="sectionBtn" data-section="spelljammer"
+                            data-title="Section Viewer: Spelljammer (D&D)">Spelljammer (D&D)</button></td>
                 </tr>
                 <tr>
-                    <td><a href="">Into the Shroud (D&D)</a></td>
+                    <td><button class="sectionBtn" data-section="intoShroud"
+                            data-title="Section Viewer: Into the Shroud (D&D)">Into the Shroud (D&D)</button></td>
                 </tr>
                 <tr>
-                    <td><a>More...</a></td>
+                    <td><button class="sectionBtn" data-section="more" data-title="Section Viewer">More... (coming
+                            sometime)</button></td>
                 </tr>
             </table>
         </div>
         Imma add stories here. <br /> (Basically, this page is a mess, but what I'm going to implement is that you can
         click one of the buttons on the left--yeah, the ones that don't work at the moment--and it'll pop open the
-        section viewer in here to navigate all the stories under that heading. It probably won't be structured very
+        section viewer below to navigate all the stories under that heading. It probably won't be structured very
         well, and most of the stories will probably be PDF files like the content in the Etokys Player's Guide, but it
         should be pretty easy to navigate once its done.)
     </div>
+    
+    <br />
 
-
-    <div class="expandable">
-        <h1>Section Viewer
-            <label class="toggle" for="section1">Section 1</label>
-            <label class="toggle" for="section2">Section 2</label>
+    <div class="contentlibrary">
+        <h1>
+            <div id="title">Section Viewer</div>
         </h1>
-        <input type="checkbox" id="section1" />
-        <input type="checkbox" id="section2" />
-        <div class="content" for="section1">
 
-            <label class="collapsible">
-                <input type="checkbox" />
-                <span class="title">
-                    <h2>Story 1<div class="instruction">[click to toggle]</div>
-                    </h2>
-                </span>
-                <div class="content">
-                    <div class="story">
-                        This is a placeholder for a story.
-                    </div>
-                </div>
-            </label>
-
-            <br />
-
-            <label class="collapsible">
-                <input type="checkbox" />
-                <span class="title">
-                    <h2>Story 2<div class="instruction">[click to toggle]</div>
-                    </h2>
-                </span>
-                <div class="content">
-                    <div class="story">
-                        This is a placeholder for a story.
-                    </div>
-                </div>
-            </label>
-
+        <div id="standalones" class="stories hidden">
+            <h3><a href="ReadingLibrary/Seraphox.pdf">Sunset and the Seraphox</a></h3> A short sci-fi story about a
+            world after the
+            apocalypse.
         </div>
-        <div class="content" for="section2">
 
-            <label class="collapsible">
-                <input type="checkbox" />
-                <span class="title">
-                    <h2>Story 1<div class="instruction">[click to toggle]</div>
-                    </h2>
-                </span>
-                <div class="content">
-                    <div class="story">
-                        This is a placeholder for a story.
-                    </div>
-                </div>
-            </label>
+        <div id="spelljammer" class="stories hidden">
+            <h3><a href="ReadingLibrary/Start.pdf">An Artificer's Start</a></h3> Aya takes her first steps as an
+            Artificer.
+            <h3><a href="ReadingLibrary/Rest.pdf">A Place to Rest</a></h3> Even Aya needs repairs.
+            <h3><a href="ReadingLibrary/Bedtime.pdf">A Bedtime Story</a></h3> A frequent story Aya heard as a child.
+            <h3><a href="ReadingLibrary/Ship.pdf">The Spelljammer</a></h3> The family acquires a Spelljammer.
+            <h3><a href="ReadingLibrary/Attack.pdf">The Attack</a></h3> Tragedy.
+            <h3><a href="ReadingLibrary/Nightmare.pdf">The Nightmare</a></h3> Magically-induced nightmares can be just
+            as traumatizing as real ones.
+            <h3><a href="ReadingLibrary/Reunion.pdf">The Reunion</a></h3> Aya's family is back together, but things are
+            not well at all.
+            <h3><a href="ReadingLibrary/Parting.pdf">Parting</a></h3> Aya's parents, broken and powerless, entrust the
+            future to their daughter.
+            <h3><a href="ReadingLibrary/Finals.pdf">The Final Chapters</a></h3> An unexpected reunion leads to a flurry
+            of events and raw emotions.
+            <h3><a>An Epilogue?</a></h3> The ending has yet to be written...
+        </div>
 
-            <br />
+        <div id="intoShroud" class="stories hidden">
+            <a href="">Story 1</a><br />
+            <a href="">Story 2</a><br />
+        </div>
 
-            <label class="collapsible">
-                <input type="checkbox" />
-                <span class="title">
-                    <h2>Story 2<div class="instruction">[click to toggle]</div>
-                    </h2>
-                </span>
-                <div class="content">
-                    <div class="story">
-                        This is a placeholder for a story.
-                    </div>
-                </div>
-            </label>
-
+        <div id="more" class="stories hidden">
+            <a href="">Story 1</a><br />
+            <a href="">Story 2</a><br />
         </div>
     </div>
-
 
     <br />
 
     <div class="footer">
         <br />This is a footer. There is literally no purpose for this to exist yet, it's just here for aesthetics.
         Eventually I'll probably give it some functionality. <br /> <br />
+    </div>
+
+    <script src="functionality.js">
+    </script>
 </body>
 
 </html>

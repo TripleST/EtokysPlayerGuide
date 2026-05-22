@@ -138,7 +138,7 @@
 
 .navPane {
     display: inline-flex;
-    background-color: slategrey;
+    background-color: lightslategrey;
     border-radius: 15px;
     float: inline-start;
     padding: 10px;
@@ -156,16 +156,22 @@
 }
 
 .navTable td {
+    display: block;
     padding: 3px;
     border-radius: 15px;
     background-color: #384563;
     cursor: pointer;
-    text-decoration: none;
-    color:black;
 }
 
 .navTable td:hover {
     background-color:#2f384f
+}
+
+.navButton {
+    display: block;
+    user-select: none;
+    color: black;
+    text-decoration: none;
 }
 
 .collapsible {
@@ -213,4 +219,22 @@
 
 .collapsible input:checked + .title + .content {
   max-height: 20000px; 
+}
+
+.hidden {
+    display: none;
+}
+
+.sectionBtn {
+    display: block;
+    user-select: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    font-size: 1.0em;
+    font-family: inherit;
+    width: 100%;
+    text-align: left;
 }
