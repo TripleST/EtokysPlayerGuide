@@ -1,6 +1,7 @@
 ﻿body
 {
     background-color: slategrey;
+    /* background: radial-gradient(circle, slategrey, rgb(0, 45, 90)); */
     margin: 0;
     /* padding-right: 15px;
     padding-left: 15px; */
