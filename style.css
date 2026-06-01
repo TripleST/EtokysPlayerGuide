@@ -1,7 +1,7 @@
 ﻿body
 {
     background-color: slategrey;
-    /* background: radial-gradient(circle, slategrey, rgb(0, 45, 90)); */
+    /* background: linear-gradient(to right, rgb(0, 45, 90), slategrey 10%, slategrey 90%, rgb(0, 45, 90)); */
     margin: 0;
     /* padding-right: 15px;
     padding-left: 15px; */
