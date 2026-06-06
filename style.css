@@ -129,6 +129,10 @@
     padding: 10px;
 }
 
+.descriptor {
+    flex: 1;
+}
+
 .tabs {
     display: flex;
     justify-content: center;
@@ -160,9 +164,9 @@
     display: inline-flex;
     background-color: lightslategrey;
     border-radius: 15px;
-    float: inline-start;
+    /* float: inline-start; */
     padding: 10px;
-    width: 30%;
+    width: 15%;
     border-color: darkslategrey;
     border-style: solid;
 }
