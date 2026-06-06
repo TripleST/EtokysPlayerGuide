@@ -1,24 +1,28 @@
-// document.getElementById("tabSwitch").addEventListener("click", function() {
-//     alert("TabSwitch clicked.");
-// });
 const buttons = document.querySelectorAll(".sectionBtn");
 const title = document.getElementById("title");
 const blurbs = document.querySelectorAll(".descriptor");
 const stories = document.querySelectorAll(".stories");
 
+function showSection(sectionID) {
+    const button = document.querySelector(`[data-section="${sectionID}"]`);
+    if (!button) return;
+    
+    title.textContent = button.dataset.title;
+    blurbs.forEach(blurb => { blurb.classList.add("hidden"); });
+    stories.forEach(section => { section.classList.add("hidden"); });
+    
+    document.getElementById(sectionID + "-desc").classList.remove("hidden");
+    document.getElementById(sectionID).classList.remove("hidden");
+}
+
 buttons.forEach(button => {
     button.addEventListener("click", () => {
-        const newTitle = button.dataset.title;
-        title.textContent = newTitle;
-
-        blurbs.forEach(blurb => { blurb.classList.add("hidden"); });
-        stories.forEach(section => { section.classList.add("hidden"); });
-
         const sectionID = button.dataset.section;
-        document.getElementById(sectionID + "-desc").classList.remove("hidden");
-        document.getElementById(sectionID).classList.remove("hidden");
-
-        // const visibleSection = document.getElementById(sectionID);
-        // visibleSection.classList.remove("hidden");
+        window.history.replaceState(null, "", `#${sectionID}`);
+        showSection(sectionID);
     });
 });
+
+if (window.location.hash) {
+    showSection(window.location.hash.slice(1));
+}

@@ -243,6 +243,7 @@
 
 .collapsible input:checked + .title + .content {
   max-height: 20000px; 
+  padding: 20px;
 }
 
 .hidden {
