@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Library</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="header" style="background: linear-gradient(to right, #002d5a, #326565 30%, #163e3e, #326565 70%, #002d5a);">
+        <h1><div><a href="homepage.html" class="navigation" style="left: 30px;">Back to homepage</a></div>The Library</h1>
+    </div>
+    <div class="mainBody">
+        <br />
+        
+        <br />
+
+        <div class="opening">
+            <div class="navPane">
+                <table class="navTable">
+                    <tr>
+                        <th>Section Catalog</th>
+                    </tr>
+                    <tr>
+                        <td><button class="sectionBtn" data-section="home" data-title="Section Viewer">Landing
+                                Screen</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sectionBtn" data-section="standalones"
+                                data-title="Section Viewer: Standalone Works">Standalone Works</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sectionBtn" data-section="spelljammer"
+                                data-title="Section Viewer: Spelljammer (D&D)">Spelljammer (D&D)</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sectionBtn" data-section="intoShroud"
+                                data-title="Section Viewer: Into the Shroud (D&D)">Into the Shroud (D&D)</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sectionBtn" data-section="more" data-title="Section Viewer">More... (coming
+                                sometime)</button></td>
+                    </tr>
+                </table>
+            </div>
+            Welcome to the Library! This is a page for perusing a myriad of stories I've written over the years. To
+            navigate, you can select a section on the left. The section viewer will then display all the stories under
+            that
+            heading, and this paragraph will (maybe one day)change to display a brief explanation of what that section
+            contains. Enjoy your stay!
+        </div>
+
+        <br />
+
+        <div class="contentlibrary">
+            <h1>
+                <div id="title">Section Viewer</div>
+            </h1>
+
+            <div id="home" class="stories">
+                There's nothing here! Select a section from the catalog to pull up some stories!
+            </div>
+
+            <div id="standalones" class="stories hidden">
+                <h3><a href="ReadingLibrary/Seraphox.pdf" class="storyLink">Sunset and the Seraphox</a></h3> A short
+                sci-fi story about a world after the apocalypse.
+            </div>
+
+            <div id="spelljammer" class="stories hidden">
+                <label class="collapsible">
+                    <input type="checkbox" />
+                    <span class="title">
+                        <h2>Aya's stories<div class="instruction">[click to toggle]</div>
+                        </h2>
+                    </span>
+                    <div class="content">
+                        <h3><a href="ReadingLibrary/Start.pdf" class="storyLink">An Artificer's Start</a></h3> Aya takes
+                        her first steps as an Artificer.
+                        <h3><a href="ReadingLibrary/Rest.pdf" class="storyLink">A Place to Rest</a></h3> Even Aya needs
+                        repairs.
+                        <h3><a href="ReadingLibrary/Bedtime.pdf" class="storyLink">A Bedtime Story</a></h3> A frequent
+                        story Aya heard as a child.
+                        <h3><a href="ReadingLibrary/Ship.pdf" class="storyLink">The Spelljammer</a></h3> The family
+                        acquires a Spelljammer.
+                        <h3><a href="ReadingLibrary/Attack.pdf" class="storyLink">The Attack</a></h3> Tragedy.
+                        <h3><a href="ReadingLibrary/Nightmare.pdf" class="storyLink">The Nightmare</a></h3>
+                        Magically-induced nightmares can be just as traumatizing as real ones.
+                        <h3><a href="ReadingLibrary/Reunion.pdf" class="storyLink">The Reunion</a></h3> Aya's family is
+                        back together, but things are not well at all.
+                        <h3><a href="ReadingLibrary/Parting.pdf" class="storyLink">Parting</a></h3> Aya's parents,
+                        broken and powerless, entrust the future to their daughter.
+                        <h3><a href="ReadingLibrary/Finals.pdf" class="storyLink">The Final Chapters</a></h3> An
+                        unexpected reunion leads to a flurry of events and raw emotions.
+                        <h3><a href="ReadingLibrary/Missing.pdf" class="storyLink">The Missing Chapter</a></h3> A story
+                        that was never meant to be told, but must be memorialized.
+                        <h3><a>An Epilogue?</a></h3> The ending has yet to be written...
+                    </div>
+                </label>
+                <br />
+                <label class="collapsible">
+                    <input type="checkbox" />
+                    <span class="title">
+                        <h2>Other Stories<div class="instruction">[click to toggle]</div>
+                        </h2>
+                    </span>
+                    <div class="content">
+                        (Perhaps one day I'll add stories here, like my backup character's backstory, or even others!)
+                    </div>
+                </label>
+            </div>
+
+            <div id="intoShroud" class="stories hidden">
+                <label class="collapsible">
+                    <input type="checkbox" />
+                    <span class="title">
+                        <h2>Kraekon's History<div class="instruction">[click to toggle]</div>
+                        </h2>
+                    </span>
+                    <div class="content">
+                        <h3><a href="ReadingLibrary/Shroud/1.pdf" class="storyLink">Chapter 1</a></h3> Nerys and Eric
+                        meet.
+                        <h3><a href="ReadingLibrary/Shroud/2.pdf" class="storyLink">Chapter 2</a></h3> Nerys and Eric
+                        try to come up with a name for their child while something sinister creeps in.
+                        <h3><a href="ReadingLibrary/Shroud/3.pdf" class="storyLink">Chapter 3</a></h3> Kraekon learns of
+                        the Shadowrot.
+                        <h3><a href="ReadingLibrary/Shroud/4.pdf" class="storyLink">Chapter 4</a></h3> Nerys and Eric
+                        discuss an apprenticeship for Kraekon.
+                        <h3><a href="ReadingLibrary/Shroud/5.pdf" class="storyLink">Chapter 5</a></h3> The family tries
+                        to cope with tragedy.
+                        <h3><a href="ReadingLibrary/Shroud/6.pdf" class="storyLink">Chapter 6</a></h3> Kraekon's family
+                        encounters the deep azure again.
+                        <h3><a href="ReadingLibrary/Shroud/7.pdf" class="storyLink">Chapter 7</a></h3> At one of his
+                        lowest points, Kraekon finds an ember of hope.
+                    </div>
+                </label>
+
+                <br />
+
+                <label class="collapsible">
+                    <input type="checkbox" />
+                    <span class="title">
+                        <h2>Other Stories<div class="instruction">[click to toggle]</div>
+                        </h2>
+                    </span>
+                    <div class="content">
+                        (This might eventually have stories added to it.)
+                    </div>
+                </label>
+            </div>
+
+            <div id="more" class="stories hidden">
+                <a href="" class="storyLink">Story 1</a><br />
+                <a href="" class="storyLink">Story 2</a><br />
+            </div>
+        </div>
+
+        <br />
+    </div>
+    <div class="footer">
+        <br />This is a footer. There is literally no purpose for this to exist yet, it's just here for aesthetics.
+        Eventually I'll probably give it some functionality. <br /> <br />
+    </div>
+
+    <script src="functionality.js">
+    </script>
+</body>
+
+</html>
+
+<!-- <label class="collapsible">
+                <input type="checkbox" />
+                <span class="title">
+                    <h2>Kraekon's History<div class="instruction">[click to toggle]</div>
+                    </h2>
+                </span>
+                <div class="content">
+                    
+                </div>
+            </label> -->
