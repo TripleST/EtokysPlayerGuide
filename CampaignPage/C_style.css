@@ -84,10 +84,7 @@ body
 }
 
 .footer {
-    /* background-color: #33cdcd; */
     background: linear-gradient(to right, #002d5a, #42698f 30%, #314c67, #42698f 70%,  #002d5a);
-    /* outline-style: outset;
-    outline-color: slategrey; */
     box-shadow: 0px -4px 3px rgb(39, 48, 54);
     width: 100%;
     font-style: italic;
@@ -137,7 +134,6 @@ body
     border-radius: 15px;
     box-shadow: 2px 2px 10px;
     width: fit-content;
-    /* margin: 0 auto; */
     text-decoration: none;
     font-weight: bold;
     color:rgb(0, 3, 38);
