@@ -26,3 +26,28 @@ buttons.forEach(button => {
 if (window.location.hash) {
     showSection(window.location.hash.slice(1));
 }
+
+
+
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+if (menuBtn && menu && overlay) {
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+        overlay.classList.toggle("show");
+    });
+
+    overlay.addEventListener("click", () => {
+        menu.classList.remove("show");
+        overlay.classList.remove("show");
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            menu.classList.remove("show");
+            overlay.classList.remove("show");
+        }
+    });
+}
