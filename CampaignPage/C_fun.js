@@ -1,17 +1,13 @@
 const buttons = document.querySelectorAll(".sectionBtn");
-const title = document.getElementById("title");
-const blurbs = document.querySelectorAll(".descriptor");
 const stories = document.querySelectorAll(".stories");
 
 function showSection(sectionID) {
     const button = document.querySelector(`[data-section="${sectionID}"]`);
     if (!button) return;
     
-    title.textContent = button.dataset.title;
-    blurbs.forEach(blurb => { blurb.classList.add("hidden"); });
     stories.forEach(section => { section.classList.add("hidden"); });
-    
-    document.getElementById(sectionID + "-desc").classList.remove("hidden");
+    buttons.forEach(btn => { btn.classList.remove("clicked"); });
+    button.classList.add("clicked");
     document.getElementById(sectionID).classList.remove("hidden");
 }
 
