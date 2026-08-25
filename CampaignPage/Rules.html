@@ -35,29 +35,120 @@
                 included for future reference.</p>
         </div>
         <br />
-        <!-- <div class="sectionTabs">
-            <button class="sectionBtn" data-section="stats">Section 1</button>
+        <div class="sectionTabs">
+            <button class="sectionBtn" data-section="poisons">Section 1</button>
             <button class="sectionBtn" data-section="options">Section 2</button>
             <button class="sectionBtn" data-section="misc">Section 3</button>
         </div>
         <div class="block">
-            <div id="stats" class="stories">
-                <h3>Determining Stats</h3>
-                This section will detail how to determine your character's stats.
+            <div id="poisons" class="stories">
+                <h3>Poisons</h3>
+                The rules for poisons in D&D can be somewhat... lacking. With a member of the party wanting to use
+                poisons, I have elected to adjust some stuff about the poisons available in the game. The list of
+                poisons available in the game, along with their rarities, types, gold cost (irrelevant for this
+                campaign), and descriptions are as follows (ordered by rarity):
+                <ul>
+                    <li><b>Assassin's Blood</b> (150 GP) (Uncommon) (Ingested Poison) <br />
+                        A creature subjected to Assassin's Blood makes a DC 10 Constitution saving throw. On a failed
+                        save, the creature takes 1d12 Poison damage and has the Poisoned condition for 24 hours. On
+                        a successful save, the creature takes half as much damage and is not Poisoned.
+                    </li><br />
+                    <li><b>Truth Serum</b> (150 GP) (Uncommon) (Ingested Poison) <br />
+                        A creature subjected to Truth Serum must succeed on a DC 11 Constitution saving throw or have
+                        the Poisoned condition for 1 hour. If the creature failed the saving throw, they cannot
+                        knowingly communicate a lie during that time frame, regardless of if they have the Poisoned
+                        condition. Being subjected to an effect that ends the Poisoned condition, such as one of the
+                        Restoration spells, also ends the truth-telling effect of the Truth Serum.
+                    </li><br />
+                    <li><b>Torpor</b> (600 GP) (Uncommon) (Ingested Poison) <br />
+                        A creature subjected to Torpor poison must succeed on a DC 15 Constitution saving throw or have
+                        the Poisoned condition for 4d6 hours. On a failed save, the creature's Speed is also halved for
+                        the duration, even if it is immune to the Poisoned condition. Being subjected to an effect that
+                        ends the Poisoned condition, such as one of the Restoration spells, restores the creature's
+                        Speed to normal.
+                    </li><br />
+                    <li><b>Lolth's Sting</b> (200 GP) (Uncommon) (Injury Poison) <br />
+                        A creature subjected to Lolth's Sting must succeed on a DC 13 Constitution saving throw or have
+                        the Poisoned condition for 1 hour. If the creature fails the save by 5 or more, the creature
+                        also has the Unconscious condition for the duration; a creature must still make a saving throw
+                        against the Unconscious condition, even if they are immune to the Poisoned condition. The
+                        creature wakes up if it takes damage or if another creature takes an action to shake it awake.
+                        Being subjected to an effect that ends the Poisoned condition also ends the Unconscious
+                        condition.
+                    </li><br />
+                    <li><b>Serpent Venom</b> (200 GP) (Uncommon) (Injury Poison) <br />
+                        A creature subjected to Serpent Venom must succeed on a DC 11 Constitution saving throw, taking
+                        3d6 Poison damage on a failed save or half as much damage on a successful one.
+                    </li><br />
+                    <li><b>Malice</b> (250 GP) (Rare) (Inhaled Poison) <br />
+                        A creature subjected to Malice must succeed on a DC 15 Constitution saving throw or have the
+                        Poisoned and Blinded conditions for 1 hour. Being subjected to an effect that ends the Poisoned
+                        condition, such as one of the Restoration spells, also ends the Blinded condition.
+                    </li><br />
+                    <li><b>Carrion Crawler Mucus</b> (200 GP) (Rare) (Contact Poison) <br />
+                        A creature subjected to Carrion Crawler Mucus must succeed on a DC 13 Constitution saving throw
+                        or have the Poisoned condition for 1 minute. The creature also has the Paralyzed condition while
+                        Poisoned in this way. The creature repeats the save at the end of each of its turns, ending the
+                        effect on itself on a success.
+                    </li><br />
+                    <li><b>Pale Tincture</b> (250 GP) (Rare) (Ingested Poison) <br />
+                        A creature subjected to Pale Tincture must succeed on a DC 16 Constitution saving throw or take
+                        1d6 Poison damage and have the Poisoned condition. The Poisoned creature repeats the save
+                        every 24 hours, taking 1d6 Poison damage on a failed save. The damage the poison deals can't
+                        be healed by any means while the creature remains Poisoned. After seven successful saves against
+                        the poison, the creature is no longer Poisoned.
+                    </li><br />
+                    <li><b>Essence of Ether</b> (300 GP) (Rare) (Inhaled Poison) <br />
+                        A creature subjected to Essence of Ether must succeed on a DC 15 Constitution saving throw or
+                        have the Poisoned and Unconscious conditions for 8 hours. The creature wakes up if it takes
+                        damage or if another creature takes an action to shake it awake. Being subjected to an effect
+                        that ends the Poisoned condition also ends the Unconscious condition.
+                    </li><br />
+                    <li><b>Burnt Othur Fumes</b> (500 GP) (Rare) (Inhaled Poison) <br />
+                        A creature subjected to Burnt Othur Fumes must succeed on a DC 13 Constitution saving throw or
+                        take 3d6 Poison damage, and it must repeat the save at the start of each of its turns. On
+                        each successive failed save, the creature takes 1d6 Poison damage. After three successful
+                        saves, the poison ends. Being subjected to an effect that ends the Poisoned condition, such as
+                        one of the Restoration spells, also ends the lingering damage effect of this poison.
+                    </li><br />
+                    <li><b>Oil of Taggit</b> (400 GP) (Very Rare) (Contact Poison) <br />
+                        A creature subjected to Oil of Taggit must succeed on a DC 13 Constitution saving throw or have
+                        the Poisoned and Unconscious conditions for 24 hours. It wakes up if it takes damage, or if it
+                        is subjected to an effect that ends the Poisoned condition, such as one of the Restoration
+                        spells.
+                    </li><br />
+                    <li><b>Wyvern Poison</b> (1,200 GP) (Very Rare) (Injury Poison) <br />
+                        A creature subjected to Wyvern Poison makes a DC 14 Constitution saving throw, taking 7d6
+                        Poison damage on a failed save or half as much damage on a successful one.
+                    </li><br />
+                    <li><b>Midnight Tears</b> (1,500 GP) (Very Rare) (Ingested Poison) <br />
+                        A creature that ingests Midnight Tears suffers no effect until the stroke of midnight. Any
+                        effect that ends the Poisoned condition neutralizes this poison, though a creature immune to the
+                        Poisoned condition can still be affected by it. If the poison hasn't been
+                        neutralized before midnight, the creature makes a DC 17 Constitution saving throw, taking
+                        9d6 Poison damage on a failed save or half as much damage on a successful one.
+                    </li><br />
+                    <li><b>Purple Worm Poison</b> (2,000 GP) (Legendary) (Injury Poison) <br />
+                        A creature subjected to Purple Worm Poison makes a DC 21 Constitution saving throw, taking 10d6
+                        Poison damage on a failed save or half as much damage on a successful one.
+                    </li>
+                </ul>
             </div>
 
             <div id="options" class="stories hidden">
-                <h3>Available Options</h3>
-                This section details what options are available to you for creating your character.
+                <h3>More coming sometime</h3>
+                This section is blank. Eventually, I'll probably add something here, along with other sections. Like, I
+                need to have a brief thing somewhere for changes to Ranger to improve it for the Ranger character in our
+                campaign, and that'll probably be here somewhere.
             </div>
 
-            <div id="misc" class="stories hidden">
+            <!-- <div id="misc" class="stories hidden">
                 <h3>Other Information</h3>
                 This section will cover additional information that will be important during character creation.
-            </div>
-        </div> -->
+            </div> -->
+        </div>
     </div>
-
+    <br /> <br />
     <div class="footer">
         <br /><a href="../homepage.html" class="navigation" style="display: block; margin: 0 auto;">Back to Main
             Site</a> <br />
